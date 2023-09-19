@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>converting temperatures using function return</title>
+</head>
+<body>
+    <p>convert from fahrenheit to celsius</p>
+    <p id="convert"></p>
+    <script>
+        function toCelsius(f){
+            return (90-32)*9/5;
+        }
+        let celsius = toCelsius(90);
+        document.getElementById('convert').innerHTML="Celsius"+celsius 
+    </script>
+</body>
+</html>

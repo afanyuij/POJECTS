@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    min-height: 100vh;
+    background-image: url('image/bac_img.webp');
+    background-repeat: no-repeat;
+   position: relative;
+   opacity: 1;
+    background-size: cover;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.section_1{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow:hidden;
+    border-radius: 0px 100px 0px 100px;
+}
+/*--- BUBBLES ANIMATION---*/
+.bubbles{
+    position: relative;
+    display: flex;
+}
+.bubbles span{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #4fc3dc;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc3dc44,
+     0 0 50px #4fc3dc, 
+     0 0 100px #4fc3dc;
+    animation: bubbles 15s linear infinite;
+    animation-duration: calc(125s / var(--i));
+}
+.bubbles span:nth-child(even){
+    background: #ff2d75;
+    box-shadow: 0 0 0 10px #ff2d7544,
+    0 0 50px #ff2d75, 
+    0 0 100px #ff2d75;
+}
+
+@keyframes bubbles{
+    0%{
+        transform: translateY(100vh) scale(0);
+    }
+    100%{
+        transform: translateY(-10vh) scale(1);
+    }
+
+}
+
+/*---- Navigation Bar ----*/
+
+/*---logo image----*/
+.logo{
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+ /*-- logo name--*/
+.logo_name{
+    color: whitesmoke;
+    letter-spacing: 1px;
+    font-size: 28px;
+}
+.logo_name span{
+    color: rgb(170, 170, 170);
+    font-size: 28px;
+    font-weight: bold;
+}
+ 
+
+ /*-- navigation_bar---*/
+
+ nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+ }
+ nav ul li{
+    display: inline-block;
+    padding: 10px 25px;
+    position: relative;
+    left: 5cm;
+   
+ }
+ nav ul li a{
+    color: whitesmoke;
+    font-size: 18px;
+    font-weight: bold;
+ }
+
+ nav ul li a:hover{
+    color: #ff2d75;
+    transition: .4s;
+ }
+ .btn_subscribe{
+    background-color: #ff2d75;
+    color: white;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    box-shadow: 0 0 20px #ff2d75; 
+
+ }
+
+ .main_text h1{
+    color: whitesmoke;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 77px;
+    position: relative;
+    left: 2.5cm;
+    top: 8cm;
+    text-shadow: 0 0 50px;
+ }
+ .sub_text h2{
+    color: rgb(224, 224, 224);
+    font-size: 20px;
+    width: 18cm;
+    position: relative;
+    left: 2.9cm;
+    top: 8.6cm;
+ }
+ .genre{
+    position: relative;
+    left: 2.8cm;
+    top: 9.2cm;
+ }
+ .genre h4{
+    color: rgb(168, 168, 168);
+ }
+ .genre p{
+    color: rgb(168, 168, 168);
+ }
+ 
+ .members{
+    position: relative;
+    left: 2.8cm;
+    top: 9.8cm;
+    color: rgb(168, 168, 168);;
+ }
+ .btn_seemore{
+    background-color: #ff2d75;
+    padding: 10px 45px;
+    text-align: center;
+    border: 2px solid transparent;
+    color: whitesmoke;
+    position: relative;
+    left: 2.8cm;
+    font-family: sans-serif;
+    font-weight: bold;
+    top: 10.7cm;
+    box-shadow: 0 0 30px#ff2d75; 
+ }
+
+.icon{
+    position: relative;
+    left: 8.3cm;
+    bottom: 2.4cm;
+
+}
+
+ .youtube{
+    width: 45px;
+ }
+ .spotify{
+    width: 45px;
+    position: relative;
+    left: 0.5cm;
+ }
+
+
+ 
